@@ -16,6 +16,7 @@ type Config struct {
 	FeishuAppVerificationToken string
 	FeishuBotName              string
 	OpenaiApiKeys              []string
+	OpenaiApiKeyPrefixs        []string
 	HttpPort                   int
 	HttpsPort                  int
 	UseHttps                   bool
