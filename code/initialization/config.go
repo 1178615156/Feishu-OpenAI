@@ -48,7 +48,7 @@ func LoadConfig(cfg string) *Config {
 		FeishuAppVerificationToken: getViperStringValue("APP_VERIFICATION_TOKEN", ""),
 		FeishuBotName:              getViperStringValue("BOT_NAME", ""),
 		OpenaiApiKeys:              getViperStringArray("OPENAI_KEY", nil),
-		OpenaiApiKeyPrefixs:        getViperStringArray("OPENAI_KEY_PREFIX", "sk-,fk"),
+		OpenaiApiKeyPrefixs:        getViperStringArray("OPENAI_KEY_PREFIX", []string{"sk-","fk"}),
 		HttpPort:                   getViperIntValue("HTTP_PORT", 9000),
 		HttpsPort:                  getViperIntValue("HTTPS_PORT", 9001),
 		UseHttps:                   getViperBoolValue("USE_HTTPS", false),
