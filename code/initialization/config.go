@@ -80,7 +80,8 @@ func getViperStringArray(key string, defaultValue []string) []string {
 		return defaultValue
 	}
 	raw := strings.Split(value, ",")
-	return filterFormatKey(raw)
+	return raw
+	//return filterFormatKey(raw)
 }
 
 func getViperIntValue(key string, defaultValue int) int {
